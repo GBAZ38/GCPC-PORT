@@ -37,4 +37,3 @@ Using tcpdump can help us better understand the processes taking place at the ne
 7. The remaining lines in the log indicate that ICMP packets were sent two more times, but the same delivery error was received both times.
 
 ---
-
