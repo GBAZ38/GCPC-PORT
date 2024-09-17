@@ -6,7 +6,7 @@
 | :---- |
 | The UDP protocol reveals that: our computer attempts to use the UDP protocol to request the ip address of yummyrecipesforme.com from the DNS server using a UDP packet.<br>
 This is based on the results of the network analysis, which show that the ICMP echo reply returned the error message: ICMP 203.0.113.2 UDP port 53 unreachable length 254.<br>
-The port noted in the error message is: port 53 is a port used for DNS services.<br>
+The port noted in the error message is: port 53. A port used for DNS services.<br>
 The most likely issue is: the word “unreachable” indicates the UDP message requesting an IP address for the domain “[www.yummyrecipesforme.com](http://www.yummyrecipesforme.com)” did not go through to the DNS server because no service was listening on the receiving DNS port, port 53\.  |
 
 | Part 2: Explain your analysis of the data and provide at least one cause of the incident. |
