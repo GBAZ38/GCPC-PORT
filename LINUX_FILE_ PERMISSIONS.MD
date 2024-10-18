@@ -52,4 +52,17 @@ To check the permissions set in the 'projects' directory, use the cd command:
 This allows us to move into '/home/researcher2/projects' and we can check this by typing 'pwd' to print the working directory. We then use the ls command with the l and a options: 
 'ls -la' 
 This lists subdirectories and files contained within the 'projects' directory including hidden files. The output should resemble:
+
 ![file_permissions1](/SCREENSHOTS/file_permissions1.png)
+
+From this we can see what the current file permisions are. The first colum of each line contains the file type, permisssions for the user, group, and other. We can see that '.project_x.txt' is not a directory because the first letter in the string is a "-" instead of a "d". We can also see that the user has read and write permission, the group has write permission, and other has no permissions. The user permissions are represented by the 2nd - 4th characters "rw-". The group permissions are represented by the 5th - 7th characters "-w-".  The other permissions are represented by the 8th - 10th characters "---". We can see that the file is owned by the user "researcher2" in the second colum. The third colum tells us that the group owner of the file is "research_team".
+
+---
+
+## CHANGE FILE PERMISSIONS
+
+The organization does not allow others to have write access to any files. Based on the permissions established in Step 3, identify which file needs to have its permissions modified. Use a Linux command to modify these permissions.
+
+As per the organizations policy we need to change the write permissions for other on the file "project_k.txt" using the command
+'chmod o-w project_k.txt'
+
