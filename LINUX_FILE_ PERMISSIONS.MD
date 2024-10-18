@@ -78,3 +78,9 @@ The files and directories in the `projects` directory belong to the `researcher2
 To modify the permissions for the `drafts` directory we use the command
 `chmod g-x drafts`
 
+Now we can double check that all permissions have been successfully changeb by using the command
+`ls -la`
+
+This gives us the following output: 
+
+![file_permissions2](/SCREENSHOTS/file_permissions2.png)
