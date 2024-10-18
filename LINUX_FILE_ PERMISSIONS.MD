@@ -99,4 +99,4 @@ This gives us the following output:
 
 ## SUMMARY
 
-In this situation you use the command `chmod` to change the permissions for different files. in conjunction with the `chmod` command we use the 'ls' command with the '-la' option to read file and subdirectory permissions while including hidden files. Following the organizations' policies, we were able to successfully change the permissions of files and directories.
+In this situation you use the command `chmod` to change the permissions for different files. in conjunction with the `chmod` command we use the `ls` command with the `-la` option to read file and subdirectory permissions while including hidden files. Following the organizations' policies, we were able to successfully change the permissions of files and directories.
