@@ -48,14 +48,18 @@ There is also one subdirectory inside the `projects` directory named `drafts`. T
 In the Manage authorization lab, check the permissions set for files and subdirectories in the `projects` directory. Make sure you display all permissions, including hidden files.
 
 To check the permissions set in the `projects` directory, use the cd command: 
+
 `cd projects` 
+
 This allows us to move into `/home/researcher2/projects` and we can check this by typing `pwd` to print the working directory. We then use the ls command with the l and a options: 
+
 `ls -la` 
+
 This lists subdirectories and files contained within the `projects` directory including hidden files. The output should resemble:
 
 ![file_permissions1](/SCREENSHOTS/file_permissions1.png)
 
-From this we can see what the current file permisions are. The first colum of each line contains the file type, permisssions for the user, group, and other. We can see that `.project_x.txt` is not a directory because the first letter in the string is a "-" instead of a "d". We can also see that the user has read and write permission, the group has write permission, and other has no permissions. The user permissions are represented by the 2nd - 4th characters "rw-". The group permissions are represented by the 5th - 7th characters "-w-".  The other permissions are represented by the 8th - 10th characters "---". We can see that the file is owned by the user "researcher2" in the second colum. The third colum tells us that the group owner of the file is "research_team".
+From this output, we can see what the current file permisions are. The first colum of each line contains the file type, permisssions for the user, group, and other. For example we can see that `.project_x.txt` is not a directory because the 1st character in the string is a `-` instead of a `d` and because of the `.txt` file extension in the name. The period in front of the file name tells us that this is a hidden file. The user permissions are represented by the 2nd - 4th characters `rw-`. The group permissions are represented by the 5th - 7th characters `-w-`.  The other permissions are represented by the 8th - 10th characters `---`. This lets us know that the user has read and write permission, the group has write permission, and other has no permissions. We can see that the file is owned by the user `researcher2` in the second colum. The third colum tells us that the group owner of the file is `research_team`.
 
 ---
 
@@ -64,23 +68,35 @@ From this we can see what the current file permisions are. The first colum of ea
 The organization does not allow others to have write access to any files. Based on the permissions established, identify which file needs to have its permissions modified. Use a Linux command to modify these permissions.
 
 As per the organizations policy we need to change the write permissions for other on the file `project_k.txt` using the command
+
 `chmod o-w project_k.txt`
 
 The research team has archived `.project_x.txt`, which is why it’s a hidden file. This file should not have write permissions for anyone, but the user and group should be able to read the file. Use a Linux command to assign `.project_x.txt` the appropriate authorization.
 
 To change the permissions for the hidden file ".projext_x.txt" we use the commands
+
 `chmod u-w .project_x.txt`
+
 `chmod g-w .project_x.txt`
+
 `chmod g+r .project_x.txt`
 
 The files and directories in the `projects` directory belong to the `researcher2` user. Only `researcher2` should be allowed to access the `drafts` directory and its contents. Use a Linux command to modify the permissions accordingly.
 
 To modify the permissions for the `drafts` directory we use the command
+
 `chmod g-x drafts`
 
 Now we can double check that all permissions have been successfully changeb by using the command
+
 `ls -la`
 
 This gives us the following output: 
 
 ![file_permissions2](/SCREENSHOTS/file_permissions2.png)
+
+---
+
+## SUMMARY
+
+In this situation you use the command `chmod` to change the permissions for different files. in conjunction with the `chmod` command we use the 'ls' command with the '-la' option to read file and subdirectory permissions while including hidden files. Following the organizations' policies, we were able to successfully change the permissions of files and directories.
