@@ -59,7 +59,9 @@ This lists subdirectories and files contained within the `projects` directory in
 
 ![file_permissions1](/SCREENSHOTS/file_permissions1.png)
 
-From this output, we can see what the current file permisions are. The first colum of each line contains the file type, permisssions for the user, group, and other. For example we can see that `.project_x.txt` is not a directory because the 1st character in the string is a `-` instead of a `d` and because of the `.txt` file extension in the name. The period in front of the file name tells us that this is a hidden file. The user permissions are represented by the 2nd - 4th characters `rw-`. The group permissions are represented by the 5th - 7th characters `-w-`.  The other permissions are represented by the 8th - 10th characters `---`. This lets us know that the user has read and write permission, the group has write permission, and other has no permissions. We can see that the file is owned by the user `researcher2` in the second colum. The third colum tells us that the group owner of the file is `research_team`.
+From this output, we can see what the current file permisions are. The first colum of each line contains the file type, permisssions for the user, group, and other. For example we can see that `.project_x.txt` is not a directory because the 1st character in the string is a `-` instead of a `d`, and because of the `.txt` file extension in the name. The period in front of the file name tells us that this is a hidden file. 
+The user permissions are represented by the 2nd - 4th characters `rw-`. The group permissions are represented by the 5th - 7th characters `-w-`.  The other permissions are represented by the 8th - 10th characters `---`. This lets us know that the user has read and write permission, the group has write permission, and other has no permissions. 
+We can see that the file is owned by the user `researcher2` in the second colum. The third colum tells us that the group owner of the file is `research_team`.
 
 ---
 
