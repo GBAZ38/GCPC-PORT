@@ -45,7 +45,7 @@ There is also one subdirectory inside the `projects` directory named `drafts`. T
 
 ## CHECK FILE AND DIRECTORY DETAILS
 
-In the Manage authorization lab, check the permissions set for files and subdirectories in the `projects` directory. Make sure you display all permissions, including hidden files.
+In the Manage authorization lab environment, check the permissions set for files and subdirectories in the `projects` directory. Make sure you display all permissions, including hidden files.
 
 To check the permissions set in the `projects` directory, use the cd command: 
 
@@ -87,7 +87,7 @@ To modify the permissions for the `drafts` directory we use the command
 
 `chmod g-x drafts`
 
-Now we can double check that all permissions have been successfully changeb by using the command
+Now we can double check that all permissions have been successfully changed by using the command
 
 `ls -la`
 
