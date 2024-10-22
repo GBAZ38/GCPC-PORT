@@ -52,4 +52,4 @@ To check the permissions set in the 'projects' directory, use the cd command:
 This allows us to move into '/home/researcher2/projects' and we can check this by typing 'pwd' to print the working directory. We then use the ls command with the l and a options: 
 'ls -la' 
 This lists subdirectories and files contained within the 'projects' directory including hidden files. The output should resemble:
-![file_permissions1](/home/seb/Pictures/file_permissions1.png)
+![file_permissions1](/SCREENSHOTS/file_permissions1.png)
