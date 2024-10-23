@@ -26,6 +26,8 @@ If we wanted to output all columns we can follow `SELECT` with an asterisk `*`
 
 NOTE: Use the asterisk `*` argument with caution. The `Chinook` database is relatively small, but when working with large databases and tables the final output may become difficult to understand, and slow to run.
 
+---
+
 ## FROM:
 
 The `SELECT` keyword is always followed with the `FROM` keyword. `FROM table_to_query` is the correct syntax. `FROM` is typically written on a new line and always followed with the name of the table we want to query. 
@@ -35,6 +37,8 @@ When you want to end the query here we use a semicolon `;` to tell SQL that this
 NOTE: Line breaks are not necessary in SQL queries, but are often used to make the query easier to understand. 
 
 `SELECT * FROM customers` would be a perfectly fine query returning all columns from the `customers` table
+
+---
 
 ## ORDER BY:
 
