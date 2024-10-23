@@ -8,7 +8,7 @@ This section is made to teach the basic SQL queries and keywords used to extract
 
 All SQL queries use the essential keywords `SELECT`, and `FROM`. Use these keywords everytime you want to query a database. These keywords help SQL identify what data you need from a database and the table you're returning it from.
 
-As an example, if we wanted to return `customerid`, `city, and `country` data from the `customers` table of the `Chinook` database we can use the commands:
+As an example, if we wanted to return `customerid`, `city`, and `country` data from the `customers` table of the `Chinook` database we can use the commands:
 
 `SELECT customerid, city, country`
 
