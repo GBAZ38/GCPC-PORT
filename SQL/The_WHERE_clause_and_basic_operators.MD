@@ -45,7 +45,7 @@ These wildcards can be placed after a string, before a string, or in both locati
 
 The following table includes these wildcards applied to the string 'a' and examples of what each pattern would return.
 
-(INSERT SCREENSHOT OF WILDCARD TABLE)
+![Wildcard_Table](/SCREENSHOTS/file_Wildcard_Table.png)
 
 ---
 
