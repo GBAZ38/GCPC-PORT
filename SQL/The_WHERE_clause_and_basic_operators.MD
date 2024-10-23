@@ -10,6 +10,8 @@ As a security analyst, you'll often be responsible for working with very large a
 
 In a cybersecurity context, you might use filters to find the login attempts of a specific user or all login attempts made at the time of a security issue. As another example, you might filter to find the devices that are running a specific version of an application.
 
+---
+
 ## WHERE:
 To create a filter in SQL, we need to use the keyword `WHERE`. `WHERE` indicates the condition for a filter.
 
@@ -25,6 +27,8 @@ Rather than returning all records in the employees table, this `WHERE` clause in
 
 NOTE: You should place the semicolon (`;`) where the query ends. When you add a filter to a basic query, the semicolon is after the filter. 
 
+---
+
 ## Filtering for patterns:
 
 You can also filter based on a pattern. For example, you can identify entries that start or end with a certain character or characters. Filtering for a pattern requires incorporating two more elements into your `WHERE` clause:
@@ -32,6 +36,8 @@ You can also filter based on a pattern. For example, you can identify entries th
 * a wildcard
 
 * the `LIKE` operator
+
+---
 
 ## Wildcards:
 
