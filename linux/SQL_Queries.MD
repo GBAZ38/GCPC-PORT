@@ -50,11 +50,11 @@ Databases can be very complicated, and this is where other SQL keywords come in 
 
 To use the `ORDER BY` keyword, write it at the end of the query and specify a column to base the sort on. As an example we'll create a query that returns the `customerid`, `city`, and `country` columns from the `customers` table, and sorts the records by the `city` column:
 
-`SELECT customerid, city, country
+`SELECT customerid, city, country`
 
-FROM customers
+`FROM customers`
 
-ORDER BY city;`
+`ORDER BY city;`
 
 or
 
@@ -70,11 +70,11 @@ The `ORDER BY` keywords sorts the records based on the column specified after th
 
 `ORDER BY` can also be used with the `DESC` keyword to specify that we want a column sorted in descending order:
 
-`SELECT customerid, city, country
+`SELECT customerid, city, country`
 
-FROM customers
+`FROM customers`
 
-ORDER BY city DESC;`
+`ORDER BY city DESC;`
 
 or
 
@@ -88,11 +88,11 @@ We can also choose multiple columns to order by. For example, if we wanted to fi
 
 Example query:
 
-`SELECT customerid, city, country
+`SELECT customerid, city, country`
 
-FROM customers
+`FROM customers`
 
-ORDER BY country, city`
+`ORDER BY country, city`
 
 or
 
