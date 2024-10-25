@@ -5,7 +5,7 @@ To find the possible vulnerabilities we need to find machines using both the spe
 
 ---
 
-#AND operator:
+# AND operator:
 
 We can make a query with multiple conditions that must be met by using the 'AND' operator between two separate conditions. 
 
