@@ -56,13 +56,13 @@ There are three types of outer joins: **LEFT JOIN**, **RIGHT JOIN**, and **FULL 
 
 ### RIGHT JOIN:
 
-![reft_join_VD](/SCREENSHOTS/Reft_joins.png)
+![Right_join_VD](/SCREENSHOTS/Right_joins.png)
 
 `RIGHT JOIN` returns all of the records of the second table but only returns rows from the first table that match on a specified column. With a `RIGHT JOIN` on the previous example, the full result returns matching rows from both, all the rows from the second table, and all the columns in both tables. For the values that don't exist in either table, we are left with a `NULL` value. 
 
 ### FULL OUTER JOIN:
 
-![Full_outer_join_VD](/SCREENSHOTS/LFull_outer_joins.png)
+![Full_outer_join_VD](/SCREENSHOTS/Full_outer_joins.png)
 
 `FULL OUTER JOIN` returns all records from both tables. Using our same example, a `FULL OUTER JOIN` returns all columns from all tables. If a row doesn't have a value for a particular column, it returns NULL. For example, the `machines` table do not have any rows with `employee_id 1190`, so the values for that row and the columns that came from the machines table is `NULL`. 
 
